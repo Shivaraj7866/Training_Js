@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+
+    <style>
+        /* body{
+            overflow: hidden;
+        } */
+         .container>div{
+            align-content: center;
+            font-size: 50px;
+            font-weight: 900;
+         }
+        .container{
+            background-color: aqua;
+            height: 800px;
+            width: 800px;
+            margin: 0% auto;
+            padding: 20px;
+
+            display: grid;
+            /* grid-template-columns: repeat(3,100px); */
+            grid-template-columns: repeat(3,auto);
+            /* grid-template-rows: 1fr 2fr ; */
+            grid-gap: 10px 20px;
+            /* justify-content: center; */ /* horizally always*/
+            align-content: center;/* vertically always*/
+        }
+
+        .grid1{
+            background-color: red;
+        }
+        .grid2{
+            background-color: blue
+        }
+        .grid3{
+            background-color: rgb(166, 220, 73)
+        }
+        .grid4{
+            background-color: rgb(19, 229, 61);
+        }
+        .grid5{
+            background-color: rgb(215, 40, 197);
+        }
+        .grid6{
+            background-color: rgb(181, 191, 193);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid1">Header</div>
+        <div class="grid2">Navbar</div>
+        <div class="grid3">Sidebar</div>
+        <div class="grid4">Content</div>
+        <div class="grid5">Infobar</div>
+        <div class="grid6">Footer</div>
+    </div>
+</body>
+</html>

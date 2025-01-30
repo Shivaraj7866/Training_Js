@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap-Timeline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* #box1{
+            height: 150px;
+            width: 150px;
+            background-color: crimson;
+            margin-top: 10px;
+        }
+        #box2{
+            height: 150px;
+            width: 150px;
+            background-color: royalblue;
+            margin-top: 10px;
+        }
+        #box3{
+            height: 150px;
+            width: 150px;
+            background-color: peru;
+            margin-top: 10px;
+        } */
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 30px;
+            /* background-color: #ed760e; */
+            color: #fff;
+        }
+
+        .nav h2{
+            font-size: 30px;
+            font-family: monospace;
+            padding: 10px 10px;
+            color: rgb(192, 19, 231);
+        }
+
+        .nav .part2{
+            display: flex;
+            gap: 35px;
+            padding: 20px 10px;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        .nav h4{
+            color: blue;
+        }
+
+        h1{
+            position: absolute;
+            top: 50%;
+            left : 50%;
+            transform: translate(-50%,50%);
+            font-family: monospace;
+            font-size: 50px ;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div> -->
+
+    <div class="nav">
+        <h2>Someshawara</h2>
+        <div class="part2">
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Work</h4>
+            <h4>Career</h4>
+        </div>
+    </div>
+
+    <h1>Someshwara Software Pvt Ltd</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./timeline.js"></script>
+</body>
+</html>

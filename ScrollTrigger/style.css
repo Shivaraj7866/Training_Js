@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    
+}
+
+/* .div1,.div2{
+    height: 100vh;
+}
+
+.div1{
+    background-color: skyblue;
+}
+
+.div2{
+    background-color: orange;
+}
+
+.square1{
+    height: 15vh;
+    width: 100px;
+    background-color: red;
+}
+
+.square2{
+    height: 20vh;
+    width: 100px;
+    z-index: 1;
+    background-color: rgb(25, 213, 81);
+    
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.panel{
+    height: 100vh;
+    background-color: skyblue;
+} */
+
+.container1,.container2,.panel1,.panel2,.panel3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;    
+    align-items:center;
+    font-size: 4em;
+    
+    /* margin-bottom: 5px; */
+    
+}
+
+#container{
+    position: absolute;
+}
+
+.container1{
+    background-color: red;
+}
+.container2{
+    background-color: fuchsia;
+}
+
+.panel1{
+    background-color: orange;
+}
+.panel2{
+    background-color: purple;
+}
+.panel3{
+    background-color: green; 
+}

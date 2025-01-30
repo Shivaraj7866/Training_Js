@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom-Cursor</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .cursor {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(249, 249, 249);
+        position: absolute;
+        transition: all ease 0.05s;
+        mix-blend-mode: difference;
+      }
+
+      .container h1 {
+        font-size: 9vw;
+        font-weight: 900;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cursor"></div>
+      <h1>CURSOR</h1>
+    </div>
+
+    <script>
+      let backGround = document.querySelector(".container");
+      let cursor = document.querySelector(".cursor");
+
+      backGround.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.x + "px";
+        cursor.style.top = e.y + "px";
+      });
+    </script>
+  </body>
+</html>

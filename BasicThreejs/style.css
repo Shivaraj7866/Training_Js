@@ -1,0 +1,79 @@
+/* html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.webgl {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  outline: none;
+}
+
+.buttons {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -100vh;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+} */
+
+
+/* -----------Scroll trial css----------- */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* html,body{
+  overflow: hidden;
+} */
+
+.webgl{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+html{
+    background: #1e1a1b;
+}
+
+.section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 7vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section1{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  font-size: 7vmin;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /* outline: none; */
+}
